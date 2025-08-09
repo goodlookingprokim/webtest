@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>웹 페이지 템플릿</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>환영합니다</h1>
+            <p>기본 웹 페이지 템플릿입니다.</p>
+            <button id="clickBtn">클릭하세요</button>
+        </section>
+
+        <section id="about">
+            <h2>소개</h2>
+            <p>이 섹션에 내용을 추가하세요.</p>
+        </section>
+
+        <section id="services">
+            <h2>서비스</h2>
+            <div class="service-container">
+                <div class="service-item">서비스 1</div>
+                <div class="service-item">서비스 2</div>
+                <div class="service-item">서비스 3</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>연락처</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="이름" required>
+                <input type="email" id="email" placeholder="이메일" required>
+                <textarea id="message" placeholder="메시지" rows="5" required></textarea>
+                <button type="submit">전송</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 웹사이트. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
