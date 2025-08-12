@@ -86,11 +86,11 @@ function initHeaderScroll() {
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
-            header.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-            header.style.boxShadow = '0 1px 0 rgba(226,232,240,1)';
+            header.style.backgroundColor = 'rgba(44, 62, 80, 0.95)';
+            header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
         } else {
-            header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
-            header.style.boxShadow = '0 1px 0 rgba(226,232,240,1)';
+            header.style.backgroundColor = 'var(--secondary-color)';
+            header.style.boxShadow = 'none';
         }
     });
 }

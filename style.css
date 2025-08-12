@@ -7,10 +7,10 @@
 
 /* 기본 폰트 및 색상 설정 */
 :root {
-    --primary-color: #10b981;
-    --secondary-color: #334155;
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
     --text-color: #333;
-    --background-color: #f8fafc;
+    --background-color: #f4f4f4;
     --white: #ffffff;
 }
 
@@ -52,15 +52,14 @@ body {
 
 /* 헤더 스타일 */
 header {
-    background: rgba(255,255,255,0.8);
-    color: inherit;
+    background: linear-gradient(180deg, rgba(44,62,80,0.98), rgba(44,62,80,0.9));
+    color: var(--white);
     padding: 0.75rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(6px);
-    border-bottom: 1px solid #e5e7eb;
 }
 
 nav ul {
@@ -75,7 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #334155;
+    color: var(--white);
     text-decoration: none;
     padding: 0.25rem 0.5rem;
     border-radius: 6px;
@@ -85,8 +84,8 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus-visible {
     color: var(--primary-color);
-    background-color: rgba(0,0,0,0.04);
-    box-shadow: 0 0 0 3px rgba(16,185,129,0.25);
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.35);
     outline: none;
 }
 
@@ -100,7 +99,6 @@ section {
     padding: 3.5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    scroll-margin-top: 96px;
 }
 
 h1, h2 {
@@ -128,13 +126,13 @@ button {
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 0.2s ease, transform 0.08s ease, box-shadow 0.2s ease;
-    box-shadow: 0 6px 20px rgba(16,185,129,0.25);
+    box-shadow: 0 6px 20px rgba(52,152,219,0.25);
 }
 
 button:hover,
 button:focus-visible {
-    background-color: #059669;
-    box-shadow: 0 8px 24px rgba(16,185,129,0.35);
+    background-color: #2d8bd0;
+    box-shadow: 0 8px 24px rgba(52,152,219,0.35);
     outline: none;
 }
 
@@ -191,8 +189,8 @@ form textarea:focus {
 
 /* 푸터 스타일 */
 footer {
-    background: #f8fafc;
-    color: #475569;
+    background: linear-gradient(0deg, rgba(44,62,80,1), rgba(44,62,80,0.95));
+    color: var(--white);
     text-align: center;
     padding: 1.75rem 0;
 }
@@ -221,6 +219,29 @@ footer {
 }
 
 /* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e6e6e6;
+        --background-color: #0f1318;
+        --secondary-color: #1c2530;
+    }
+
+    .service-item {
+        background: linear-gradient(180deg, #1a1f26, #161b22);
+        box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+    }
+
+    form input,
+    form textarea {
+        background: #10151b;
+        border-color: #2b3542;
+        color: var(--text-color);
+    }
+
+    header, footer {
+        backdrop-filter: blur(8px);
+    }
+}
 
 /* 모션 감소 선호 대응 */
 @media (prefers-reduced-motion: reduce) {
