@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="모던하고 반응형인 웹 페이지 템플릿. 서비스 소개, 폼, 스무스 스크롤 등 기본 기능 제공.">
     <title>웹 페이지 템플릿</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
     <header>
-        <nav>
+        <nav aria-label="주요">
             <ul>
                 <li><a href="#home">홈</a></li>
                 <li><a href="#about">소개</a></li>
@@ -19,7 +24,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="content">
         <section id="home">
             <h1>환영합니다</h1>
             <p>기본 웹 페이지 템플릿입니다.</p>
